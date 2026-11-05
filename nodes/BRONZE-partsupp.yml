@@ -1,0 +1,106 @@
+fileVersion: 1
+id: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+name: partsupp
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e98d3f9-7bfc-4195-a066-56d16550126d
+          stepCounter: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: ps_partkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30fc7f09-5a73-44a0-a7df-0d7f41e252bf
+          stepCounter: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: ps_suppkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1672133f-3c7c-465f-bc82-9784049c6bfe
+          stepCounter: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+        config: {}
+        dataType: Int32
+        defaultValue: ""
+        description: ""
+        name: ps_availqty
+        nativeType: Int32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4f3681a-dea9-43c8-a19b-609f124c0594
+          stepCounter: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+        config: {}
+        dataType: Decimal(12, 2)
+        defaultValue: ""
+        description: ""
+        name: ps_supplycost
+        nativeType: Decimal(12, 2)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79dd851b-eed6-487b-bc93-04bb00a59a96
+          stepCounter: 55728b09-e3be-4958-a0b2-a2ed9ba52cbb
+        config: {}
+        dataType: String
+        defaultValue: ""
+        description: ""
+        name: ps_comment
+        nativeType: String
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: partsupp
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

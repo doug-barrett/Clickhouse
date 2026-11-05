@@ -1,0 +1,70 @@
+fileVersion: 1
+id: 5e84009b-febd-4078-8c54-46606133f38e
+name: region
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2d7dc45-691d-4462-a34e-a272f7729d29
+          stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: r_regionkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc07c3db-410a-4fd7-be39-d11380731e05
+          stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+        config: {}
+        dataType: FixedString(25)
+        defaultValue: ""
+        description: ""
+        name: r_name
+        nativeType: FixedString(25)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbb0eb33-df4d-47bf-b9f2-3ad8b1ecb926
+          stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+        config: {}
+        dataType: String
+        defaultValue: ""
+        description: ""
+        name: r_comment
+        nativeType: String
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: region
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
