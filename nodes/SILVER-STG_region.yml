@@ -1,0 +1,85 @@
+fileVersion: 1
+id: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+name: STG_region
+operation:
+  config:
+    insertStrategy: INSERT
+    orderBy: tuple()
+    partitionBy: ""
+    postSQL: ""
+    preSQL: ""
+    tableEngine: MergeTree
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SILVER
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b063016-6e8c-42af-9b7b-8fa97ae60359
+          stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+        config: {}
+        dataType: UInt32
+        description: ""
+        name: r_regionkey
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2d7dc45-691d-4462-a34e-a272f7729d29
+                stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 123405a7-e1b9-4f6b-8040-a6eeb51aee13
+          stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+        config: {}
+        dataType: FixedString(25)
+        description: ""
+        name: r_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc07c3db-410a-4fd7-be39-d11380731e05
+                stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ba5f678-0046-4dba-b08d-ecbc0dd5ef61
+          stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+        config: {}
+        dataType: String
+        description: ""
+        name: r_comment
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbb0eb33-df4d-47bf-b9f2-3ad8b1ecb926
+                stepCounter: 5e84009b-febd-4078-8c54-46606133f38e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          region: 5e84009b-febd-4078-8c54-46606133f38e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: BRONZE
+            nodeName: region
+        join:
+          joinCondition: FROM {{ ref('BRONZE', 'region') }} `region`
+        name: STG_region
+        noLinkRefs: []
+  name: STG_region
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

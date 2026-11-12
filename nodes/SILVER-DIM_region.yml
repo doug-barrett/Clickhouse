@@ -1,0 +1,85 @@
+fileVersion: 1
+id: e70eb4c5-1a4b-48e4-8cb4-0daaca932947
+name: DIM_region
+operation:
+  config:
+    insertStrategy: INSERT
+    orderBy: tuple()
+    partitionBy: ""
+    postSQL: ""
+    preSQL: ""
+    tableEngine: MergeTree
+    testsEnabled: true
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SILVER
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e11d4e6-a8b0-4f4c-8537-49d829d3eb3e
+          stepCounter: e70eb4c5-1a4b-48e4-8cb4-0daaca932947
+        config: {}
+        dataType: UInt32
+        description: ""
+        name: r_regionkey
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b063016-6e8c-42af-9b7b-8fa97ae60359
+                stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4586ee77-a15d-485c-b4a3-ed0d8a58844f
+          stepCounter: e70eb4c5-1a4b-48e4-8cb4-0daaca932947
+        config: {}
+        dataType: FixedString(25)
+        description: ""
+        name: r_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 123405a7-e1b9-4f6b-8040-a6eeb51aee13
+                stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48224f32-13dc-434f-aa8b-38f45594ac1e
+          stepCounter: e70eb4c5-1a4b-48e4-8cb4-0daaca932947
+        config: {}
+        dataType: String
+        description: ""
+        name: r_comment
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ba5f678-0046-4dba-b08d-ecbc0dd5ef61
+                stepCounter: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_region: a2a22cec-65a4-44e0-bbfc-70d00e1cf8cb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SILVER
+            nodeName: STG_region
+        join:
+          joinCondition: FROM {{ ref('SILVER', 'STG_region') }} `STG_region`
+        name: DIM_region
+        noLinkRefs: []
+  name: DIM_region
+  overrideSQL: false
+  schema: ""
+  sqlType: Dimension
+  type: sql
+  version: 1
+type: Node
