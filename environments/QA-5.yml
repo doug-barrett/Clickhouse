@@ -7,5 +7,5 @@ mappingDefinitions:
   SILVER:
     database: ""
     schema: WORKSPACE_DOUG_QA
-name: New Environment
+name: QA
 type: Environment
