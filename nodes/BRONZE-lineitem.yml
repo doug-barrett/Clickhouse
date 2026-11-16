@@ -1,0 +1,304 @@
+fileVersion: 1
+id: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+name: lineitem
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f047dc9a-e5c4-4eb0-b216-979f15ae43ec
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: l_orderkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: acfd527f-678e-4a6b-b323-5d80e9c39817
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: l_partkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92c0f504-a30f-490e-b09a-a84dccbc1a52
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: l_suppkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 894c339c-b133-42a5-8f78-899b1b135e05
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Int32
+        defaultValue: ""
+        description: ""
+        name: l_linenumber
+        nativeType: Int32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bac39375-804f-471a-be23-da5ed69cfeaf
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Decimal(12, 2)
+        defaultValue: ""
+        description: ""
+        name: l_quantity
+        nativeType: Decimal(12, 2)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6209dda5-adeb-4dc9-b6fb-27d286360b7a
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Decimal(12, 2)
+        defaultValue: ""
+        description: ""
+        name: l_extendedprice
+        nativeType: Decimal(12, 2)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 01fcaa7c-210e-48cc-af74-6ee9d1516c4c
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Decimal(12, 2)
+        defaultValue: ""
+        description: ""
+        name: l_discount
+        nativeType: Decimal(12, 2)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91d1ebd5-9b0d-41e1-af2c-c6ada6c9adc7
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Decimal(12, 2)
+        defaultValue: ""
+        description: ""
+        name: l_tax
+        nativeType: Decimal(12, 2)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a366e43b-0dec-4228-8e58-5359058d23fe
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: FixedString(1)
+        defaultValue: ""
+        description: ""
+        name: l_returnflag
+        nativeType: FixedString(1)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94c90f22-587d-4213-b0b4-7af4fcf61bc7
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: FixedString(1)
+        defaultValue: ""
+        description: ""
+        name: l_linestatus
+        nativeType: FixedString(1)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fb8be71-deb0-486b-b857-3d3a56c7cf7c
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Date
+        defaultValue: ""
+        description: ""
+        name: l_shipdate
+        nativeType: Date
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77c54f0c-8a75-4998-a6b6-0adecad0b42f
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Date
+        defaultValue: ""
+        description: ""
+        name: l_commitdate
+        nativeType: Date
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed621ced-0dbf-45ed-ae7f-6cee8709cf48
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: Date
+        defaultValue: ""
+        description: ""
+        name: l_receiptdate
+        nativeType: Date
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 509a4c2c-c80e-427b-a23d-445a4f6cfb4a
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: FixedString(25)
+        defaultValue: ""
+        description: ""
+        name: l_shipinstruct
+        nativeType: FixedString(25)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8000648a-8726-4998-9686-68ab7f83474f
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: FixedString(10)
+        defaultValue: ""
+        description: ""
+        name: l_shipmode
+        nativeType: FixedString(10)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a834650b-8c0b-4a83-a016-ec4ca689baf2
+          stepCounter: ca4cbd30-b6ea-4d68-98bf-9f329f938db2
+        config: {}
+        dataType: String
+        defaultValue: ""
+        description: ""
+        name: l_comment
+        nativeType: String
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: lineitem
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

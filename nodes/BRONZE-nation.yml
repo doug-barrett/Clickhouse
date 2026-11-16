@@ -1,0 +1,88 @@
+fileVersion: 1
+id: 57005a60-ecc4-439d-abb3-29aac6e194e0
+name: nation
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: BRONZE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a382d51c-82be-4fa4-b5c8-408dd07a9558
+          stepCounter: 57005a60-ecc4-439d-abb3-29aac6e194e0
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: n_nationkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85692ad8-9e15-44c8-bf97-a25e731d79be
+          stepCounter: 57005a60-ecc4-439d-abb3-29aac6e194e0
+        config: {}
+        dataType: FixedString(25)
+        defaultValue: ""
+        description: ""
+        name: n_name
+        nativeType: FixedString(25)
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 06a1e646-91f2-4d85-a40f-c1225401717c
+          stepCounter: 57005a60-ecc4-439d-abb3-29aac6e194e0
+        config: {}
+        dataType: UInt32
+        defaultValue: ""
+        description: ""
+        name: n_regionkey
+        nativeType: UInt32
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3e6364c-ad46-4a87-9d53-3992efa49cbe
+          stepCounter: 57005a60-ecc4-439d-abb3-29aac6e194e0
+        config: {}
+        dataType: String
+        defaultValue: ""
+        description: ""
+        name: n_comment
+        nativeType: String
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: nation
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "5"
+mappingDefinitions:
+  BRONZE:
+    database: ""
+    schema: tpch
+  SILVER:
+    database: ""
+    schema: WORKSPACE_DOUG_QA
+name: QA
+type: Environment
