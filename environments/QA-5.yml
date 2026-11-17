@@ -4,6 +4,9 @@ mappingDefinitions:
   BRONZE:
     database: ""
     schema: tpch
+  GOLD:
+    database: ""
+    schema: WORKSPACE_DOUG_QA
   SILVER:
     database: ""
     schema: WORKSPACE_DOUG_QA
