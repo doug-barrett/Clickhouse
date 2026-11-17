@@ -1,0 +1,63 @@
+@id("03ce63af-7511-4ba3-aa00-9759c2137efa")
+@nodeType("sqlView")
+SELECT
+     `o_orderkey` AS `o_orderkey`,
+     `l_linenumber` AS `l_linenumber`,
+     `FCT_orders`.`DIM_part_KEY` AS `DIM_part_KEY`,
+     `FCT_orders`.`DIM_supplier_KEY` AS `DIM_supplier_KEY`,
+     `FCT_orders`.`DIM_customer_KEY` AS `DIM_customer_KEY`,
+     `o_custkey` AS `o_custkey`,
+     `o_orderstatus` AS `o_orderstatus`,
+     `o_totalprice` AS `o_totalprice`,
+     `o_orderdate` AS `o_orderdate`,
+     `o_orderpriority` AS `o_orderpriority`,
+     `o_clerk` AS `o_clerk`,
+     `o_shippriority` AS `o_shippriority`,
+     `o_comment` AS `o_comment`,
+     `l_partkey` AS `l_partkey`,
+     `l_suppkey` AS `l_suppkey`,
+     `l_quantity` AS `l_quantity`,
+     `l_extendedprice` AS `l_extendedprice`,
+     `l_discount` AS `l_discount`,
+     `l_tax` AS `l_tax`,
+     `l_returnflag` AS `l_returnflag`,
+     `l_linestatus` AS `l_linestatus`,
+     `l_shipdate` AS `l_shipdate`,
+     `l_commitdate` AS `l_commitdate`,
+     `l_receiptdate` AS `l_receiptdate`,
+     `l_shipinstruct` AS `l_shipinstruct`,
+     `l_shipmode` AS `l_shipmode`,
+     `l_comment` AS `l_comment`,
+     `p_partkey` AS `p_partkey`,
+     `p_name` AS `p_name`,
+     `p_mfgr` AS `p_mfgr`,
+     `p_brand` AS `p_brand`,
+     `p_type` AS `p_type`,
+     `p_size` AS `p_size`,
+     `p_container` AS `p_container`,
+     `p_retailprice` AS `p_retailprice`,
+     `p_comment` AS `p_comment`,
+     `s_suppkey` AS `s_suppkey`,
+     `s_name` AS `s_name`,
+     `s_address` AS `s_address`,
+     `s_nationkey` AS `s_nationkey`,
+     `s_phone` AS `s_phone`,
+     `s_acctbal` AS `s_acctbal`,
+     `s_comment` AS `s_comment`,
+     `c_custkey` AS `c_custkey`,
+     `c_name` AS `c_name`,
+     `c_address` AS `c_address`,
+     `c_nationkey` AS `c_nationkey`,
+     `nation` AS `nation`,
+     `region` AS `region`,
+     `c_phone` AS `c_phone`,
+     `c_acctbal` AS `c_acctbal`,
+     `c_mktsegment` AS `c_mktsegment`,
+     `c_comment` AS `c_comment`
+FROM {{ ref('SILVER', 'FCT_orders') }} `FCT_orders`
+JOIN {{ ref('SILVER', 'DIM_part') }} `DIM_part`
+ON `FCT_orders`.DIM_part_KEY = `DIM_part`.DIM_part_KEY
+JOIN {{ ref('SILVER', 'DIM_supplier') }} `DIM_supplier`
+ON `FCT_orders`.DIM_supplier_KEY = `DIM_supplier`.DIM_supplier_KEY
+JOIN {{ ref('SILVER', 'DIM_customer') }} `DIM_customer`
+ON `FCT_orders`.DIM_customer_KEY = `DIM_customer`.DIM_customer_KEY

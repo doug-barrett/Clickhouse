@@ -1,0 +1,33 @@
+@id("adb8c97d-4e68-45b8-ad89-0215ef496b00")
+@nodeType("SQLFact")
+SELECT
+    "o_orderkey"                         AS "o_orderkey"         @id("937cde") @isBusinessKey,
+    "l_linenumber"                       AS "l_linenumber"       @id("016832") @isBusinessKey,
+    "DIM_part_KEY"                       AS "DIM_part_KEY"       @id("95cd20"),
+    "DIM_supplier_KEY"                   AS "DIM_supplier_KEY"   @id("1379be"),
+    "DIM_customer_KEY"                   AS "DIM_customer_KEY"   @id("b5cb74"),
+    "o_custkey"                          AS "o_custkey"          @id("c7d37a"),
+    "o_orderstatus"                      AS "o_orderstatus"      @id("958bd8"),
+    "o_totalprice"                       AS "o_totalprice"       @id("701dd6"),
+    "o_orderdate"                        AS "o_orderdate"        @id("a85cbc"),
+    "o_orderpriority"                    AS "o_orderpriority"    @id("e18d1e"),
+    "o_clerk"                            AS "o_clerk"            @id("65938f"),
+    "o_shippriority"                     AS "o_shippriority"     @id("4f5118"),
+    "o_comment"                          AS "o_comment"          @id("96c75e"),
+    "l_partkey"                          AS "l_partkey"          @id("e9823a"),
+    "l_suppkey"                          AS "l_suppkey"          @id("b21c5b"),
+    "l_quantity"                         AS "l_quantity"         @id("27b353"),
+    "l_extendedprice"                    AS "l_extendedprice"    @id("f8624e"),
+    "l_discount"                         AS "l_discount"         @id("efe148"),
+    "l_tax"                              AS "l_tax"              @id("b57753"),
+    "l_returnflag"                       AS "l_returnflag"       @id("60dcb9"),
+    "l_linestatus"                       AS "l_linestatus"       @id("246835"),
+    "l_shipdate"                         AS "l_shipdate"         @id("5b8489"),
+    "l_commitdate"                       AS "l_commitdate"       @id("4788f2"),
+    "l_receiptdate"                      AS "l_receiptdate"      @id("c5b3ad"),
+    "l_shipinstruct"                     AS "l_shipinstruct"     @id("0f07fa"),
+    "l_shipmode"                         AS "l_shipmode"         @id("7a7052"),
+    "l_comment"                          AS "l_comment"          @id("da72ef"),
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP) AS "SYSTEM_CREATE_DATE" @id("7ea5b6") @isSystemCreateDate,
+    CAST(CURRENT_TIMESTAMP AS TIMESTAMP) AS "SYSTEM_UPDATE_DATE" @id("717606") @isSystemUpdateDate @notNull
+FROM {{ ref('SILVER', 'STG_orders_keys') }} "STG_orders_keys"
