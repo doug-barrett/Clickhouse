@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "3"
+mappingDefinitions:
+  BRONZE:
+    database: ""
+    schema: tpch
+  SILVER:
+    database: ""
+    schema: WORKSPACE_DOUG_QA
+name: Clickhouse - QA
+type: Environment
